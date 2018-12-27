@@ -1,0 +1,70 @@
+namespace AduBasico
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double num1, num2, resultado;
+            int opcao;
+
+            Console.WriteLine("================================");
+            Console.WriteLine("Versão 1.0");
+            Console.WriteLine("Desenvolverdor: Lucian Cardoso");
+            Console.WriteLine("Data: 27/12/2018");
+            Console.WriteLine("================================");
+
+            Console.Write("\n");
+
+           Console.Write("Digite o primeiro numero: ");
+            num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Digite o segundo numero: ");
+            num2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("\n");
+
+            Console.Write("____________________________");
+            Console.Write("\n\n[1]SOMA        [2]SUBTRAÇÃO\n\n[3]MULTIPLICAÇÃO    [4]DIVISÃO\n");
+            Console.Write("____________________________");
+
+            Console.Write("\n");
+
+            Console.Write("\nDigite a Opção: ");
+            opcao = Convert.ToInt32(Console.ReadLine());
+
+            switch (opcao)
+            {
+                case 1:
+                    resultado = num1 + num2;
+                    Console.Write("\nO Resultado da soma é: {0}", resultado.ToString());
+                    break;
+                case 2:
+                    if(num1 < num2)
+                    {
+                        Console.Write("\nO primeiro numero e menor que o segundo. {0}");
+                        break;
+                    }
+                    else
+                    {
+                        resultado = num1 - num2;
+                        Console.Write("\nO Resultado da Subtração é: {0}", resultado.ToString());
+                        break;
+                    }
+                case 3:
+                    resultado = num1 * num2;
+                    Console.Write("\nO Resultado da Multiplicação é: {0}", resultado.ToString());
+                    break;
+                case 4:
+                    resultado = num1 / num2;
+                    Console.Write("\nO Resultado da Divisão é: {0}", resultado.ToString());
+                    break;
+                default:
+                    Console.Write("Opção Inválida.");
+                    break;
+            }
+
+            Console.Write(Console.ReadLine());
+
+        }   
+    }
+}
