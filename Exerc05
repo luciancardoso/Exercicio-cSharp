@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Globalization;
+
+namespace CouserCsharp_Exerc05
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int cod1, cod2, qtd1, qtd2;
+            double preco1, preco2, total;
+
+            Console.Write("Entre com o codigo da peça: ");
+            cod1 = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Entre com a Quantidade da peça: ");
+            qtd1 = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Entre com o preço: ");
+            preco1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+
+            Console.Write("Entre com o codigo da peça 2: ");
+            cod2 = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Entre com a Quantidade da peça 2: ");
+            qtd2 = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Entre com o preço: ");
+            preco2 = double.Parse(Console.ReadLine());
+
+            total = preco1 * qtd1 + preco2 * qtd2;
+
+            Console.Write("o valor a ser pago é: " + total.ToString("F2", CultureInfo.InvariantCulture));
+            Console.ReadLine();
+
+        }
+    }
+}
