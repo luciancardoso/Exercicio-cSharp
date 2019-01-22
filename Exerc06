@@ -1,0 +1,86 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Globalization;
+
+namespace CouserCsharp_Exerc06
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            float A, B, C;
+            double triangulo, circulo, trapezio, retangulo, quadrado;
+
+            Console.Write("Entre com a Área do Base do Triângulo: ");
+            A = float.Parse(Console.ReadLine());
+            Console.Write("Entre com a Altura do Triângulo: ");
+            C = float.Parse(Console.ReadLine());
+
+            triangulo = (A * C) /2;
+            Console.Write("a área do Triângulo: " + triangulo.ToString("F2",CultureInfo.InvariantCulture));
+
+            Console.ReadLine();
+            Console.WriteLine();
+
+            // a área do círculo de raio C. (PI = 3.14159)
+
+            Console.Write("Entre com a área do Círculo: ");
+            C = float.Parse(Console.ReadLine());
+
+            circulo = Math.PI * Math.Pow(C, 2);
+
+            Console.Write("a área do círculo de raio C: " + circulo.ToString("F2", CultureInfo.InvariantCulture));
+
+            Console.ReadLine();
+            Console.WriteLine();
+
+            // a área do trapézio que tem A e B por bases e C por altura.
+
+            Console.Write("Entre com a Área do Trapézio Base: ");
+            A = float.Parse(Console.ReadLine());
+
+            Console.Write("Entre com a segunda Base do Trapézio: ");
+            B = float.Parse(Console.ReadLine());
+
+            Console.Write("Entre com a Altura do Trapézio: ");
+            C = float.Parse(Console.ReadLine());
+
+            trapezio = ((A + B) * C) / 2;
+
+            Console.Write("A área do Trapézio é: " + trapezio.ToString("F2", CultureInfo.InvariantCulture));
+            Console.ReadLine();
+
+            Console.WriteLine();
+
+            // Lado do Quadrado
+
+            Console.Write("Entre com a área do quadrado: ");
+            B = float.Parse(Console.ReadLine());
+
+            quadrado = Math.Pow(B, 2);
+
+            Console.Write("A aréa do quadrado: " + quadrado.ToString("F2", CultureInfo.InvariantCulture));
+            Console.ReadLine();
+
+            Console.WriteLine();
+
+            // a área do retângulo que tem lados A e B.
+
+            Console.Write("Entre com a área do Retângulo A: ");
+            A = float.Parse(Console.ReadLine());
+
+            Console.Write("Entre com a área do Retângulo B: ");
+            B = float.Parse(Console.ReadLine());
+
+            retangulo = A * B;
+
+            Console.Write("A área do Retângulo é: " + retangulo.ToString("F2", CultureInfo.InvariantCulture));
+            Console.ReadLine();
+
+        }
+    }
+}
