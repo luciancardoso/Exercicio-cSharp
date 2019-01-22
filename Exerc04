@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Globalization;
+
+namespace CouserCsharp_Exerc04
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Entre com o Número de Funcionários: ");
+            int funcionarios = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Entre com o valor Horas Trabalhadas: ");
+            int horasTrabalhadas = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Entre com o valor da hora: ");
+            double hora = double.Parse(Console.ReadLine());
+
+            double salario = horasTrabalhadas * hora;
+
+            Console.WriteLine("Number: " + funcionarios);
+            Console.Write("Salário: " + salario.ToString("F2",CultureInfo.InvariantCulture));
+            Console.ReadLine();
+
+        }
+    }
+}
