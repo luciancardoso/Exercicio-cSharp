@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CouserCsharp_Exerc02
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // Fórmula da área: area = PI .raio^2
+            // considere o valor de PI = 3.14159
+
+            Console.WriteLine("Entre com o valor do raio de um circulo: ");
+            double raio = double.Parse(Console.ReadLine());
+
+            double area = Math.PI * Math.Pow(raio, 2);
+
+            Console.WriteLine("O valor da área do círculo: " + area);
+
+        }
+    }
+}
