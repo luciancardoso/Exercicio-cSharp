@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CouserCsharp_Exerc03
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int A, B, C, D, DIFERENCIA;
+
+            Console.Write("Entre com o primeiro valor: ");
+            A = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Entre com o segundo valor: ");
+            B = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Entre com o terceiro valor: ");
+            C = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Entre com o quarto valor: ");
+            D = Int32.Parse(Console.ReadLine());
+
+            DIFERENCIA = (A * B - C * D);
+
+            Console.Write("O resultado da DIFERENCIA: " + DIFERENCIA);
+            Console.ReadLine();
+
+        }
+    }
+}
